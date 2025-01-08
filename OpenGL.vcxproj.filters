@@ -41,16 +41,28 @@
     <ClInclude Include="camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="shader.vs" />
     <None Include="shader.fs" />
+    <None Include="lightshader.vs" />
+    <None Include="lightshader.fs" />
+    <None Include="lightsource.fs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\Downloads\container.jpg">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="..\..\..\..\Downloads\awesomeface.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\container2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\..\Downloads\container2_specular.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

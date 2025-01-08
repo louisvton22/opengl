@@ -27,16 +27,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera.h" />
+    <ClInclude Include="material.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="lightshader.fs" />
+    <None Include="lightshader.vs" />
+    <None Include="lightsource.fs" />
     <None Include="shader.fs" />
     <None Include="shader.vs" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\Downloads\awesomeface.png" />
     <Image Include="..\..\..\..\Downloads\container.jpg" />
+    <Image Include="..\..\..\..\Downloads\container2.png" />
+    <Image Include="..\..\..\..\Downloads\container2_specular.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
