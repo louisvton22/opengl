@@ -43,6 +43,7 @@
     <Image Include="..\..\..\..\Downloads\container.jpg" />
     <Image Include="..\..\..\..\Downloads\container2.png" />
     <Image Include="..\..\..\..\Downloads\container2_specular.png" />
+    <Image Include="..\..\..\..\Downloads\matrix.jpg" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

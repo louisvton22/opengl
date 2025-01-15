@@ -1,10 +1,10 @@
 ﻿  main.cpp
-C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(381,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(399,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(515,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(516,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(519,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(520,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(521,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(522,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(394,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(412,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(558,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(559,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(562,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(563,16): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(564,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp(565,10): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
   OpenGL.vcxproj -> C:\Users\tonsa\source\repos\OpenGL\x64\Debug\OpenGL.exe
