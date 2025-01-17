@@ -382,8 +382,31 @@ int main() {
 	//// create camera up axis by cross product of camera direction and right 
 	//glm::vec3 cameraUp = glm::cross(cameraDirection, cameraRight);
 
-	// camera rotation
-	
+	// setting point light positions;
+	glm::vec3 pointLightPositions[] = {
+		glm::vec3(0.7f, 0.2f, 2.0f),
+		glm::vec3(2.3f, -3.3f, -4.0f),
+		glm::vec3(-4.0f, 2.0f, -12.0f),
+		glm::vec3(0.0f, 0.0f, -3.0f)
+	};
+
+	// setting struct uniforms directional light
+	lightingShader.setVec3("dirLight.direction", glm::vec3(0.0f, 0.5f, 0.2f));
+	lightingShader.setVec3("dirLight.ambient", 0.2f, 0.2f, 0.2f);
+	lightingShader.setVec3("dirLight.diffuse", 0.3f, 0.3f, 0.3f);
+	lightingShader.setVec3("dirLight.specular", 0.1f, 0.1f, 0.1f);
+	// setting struct uniforms point lights
+	for (int i = 0; i < 4; i++) {
+		lightingShader.setVec3("pointLights["+std::to_string(i)+"].position", pointLightPositions[i]);
+		lightingShader.setFloat("pointLights[" + std::to_string(i) + "].constant", 1.0f);
+		lightingShader.setFloat("pointLights[" + std::to_string(i) + "].linear", 0.09f);
+		lightingShader.setFloat("pointLights[" + std::to_string(i) + "].quadratic", 0.032f);
+
+		lightingShader.setVec3("pointLights[" + std::to_string(i) + "].ambient", 0.1f, 0.1f, 0.1f);
+		lightingShader.setVec3("pointLights[" + std::to_string(i) + "].diffuse", 0.4f, 0.4f, 0.4f);
+		lightingShader.setVec3("pointLights[" + std::to_string(i) + "].specular", 0.1f, 0.1f, 0.1f);
+	}
+
 	camera.setFront();
 	
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -470,14 +493,16 @@ int main() {
 		//lightingShader.setVec3("light.diffuse", diffuseColor);
 
 		lightCubeShader.use();
-		model = glm::mat4(1.0f);
 		
-		model = glm::translate(model, rotatePos);
-		model = glm::scale(model, glm::vec3(0.2f));
-		lightCubeShader.setMat4("model", model);
-		lightCubeShader.setMat4("view", view);
-		lightCubeShader.setMat4("projection", projection);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
+		for (int i = 0; i < 4; i++) {
+			model = glm::mat4(1.0f);
+			model = glm::translate(model, pointLightPositions[i]);
+			model = glm::scale(model, glm::vec3(0.2f));
+			lightCubeShader.setMat4("model", model);
+			lightCubeShader.setMat4("view", view);
+			lightCubeShader.setMat4("projection", projection);
+			glDrawArrays(GL_TRIANGLES, 0, 36);
+		}
 
 		// check and call events and swap the buffers
 		glfwSwapBuffers(window); // 
