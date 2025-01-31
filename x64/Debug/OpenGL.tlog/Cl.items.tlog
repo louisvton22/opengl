@@ -1,5 +1,7 @@
 C:\Users\tonsa\Downloads\glad\src\glad.c;C:\Users\tonsa\source\repos\OpenGL\OpenGL\x64\Debug\glad.obj
 C:\Users\tonsa\source\repos\OpenGL\OpenGL\camera.cpp;C:\Users\tonsa\source\repos\OpenGL\OpenGL\x64\Debug\camera.obj
 C:\Users\tonsa\source\repos\OpenGL\OpenGL\main.cpp;C:\Users\tonsa\source\repos\OpenGL\OpenGL\x64\Debug\main.obj
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\mesh.cpp;C:\Users\tonsa\source\repos\OpenGL\OpenGL\x64\Debug\mesh.obj
+C:\Users\tonsa\source\repos\OpenGL\OpenGL\model.cpp;C:\Users\tonsa\source\repos\OpenGL\OpenGL\x64\Debug\model.obj
 C:\Users\tonsa\source\repos\OpenGL\OpenGL\Shader.cpp;C:\Users\tonsa\source\repos\OpenGL\OpenGL\x64\Debug\Shader.obj
 C:\Users\tonsa\source\repos\OpenGL\OpenGL\stb_image.cpp;C:\Users\tonsa\source\repos\OpenGL\OpenGL\x64\Debug\stb_image.obj

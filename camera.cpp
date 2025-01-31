@@ -39,7 +39,7 @@ void Camera::changeUp(glm::vec3 pos)
 void Camera::moveRight(float cameraSpeed)
 {
 	position += glm::normalize(glm::cross(front, up)) * cameraSpeed;
-	std::cout << position.x  << position.y << position.z << std::endl;
+	//std::cout << position.x  << position.y << position.z << std::endl;
 }
 
 void Camera::moveLeft(float cameraSpeed)
